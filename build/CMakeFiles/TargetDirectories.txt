@@ -1,0 +1,7 @@
+/home/habreu/WORK/microelectronics/build/CMakeFiles/install/strip.dir
+/home/habreu/WORK/microelectronics/build/CMakeFiles/edit_cache.dir
+/home/habreu/WORK/microelectronics/build/CMakeFiles/microelectronics.dir
+/home/habreu/WORK/microelectronics/build/CMakeFiles/rebuild_cache.dir
+/home/habreu/WORK/microelectronics/build/CMakeFiles/list_install_components.dir
+/home/habreu/WORK/microelectronics/build/CMakeFiles/install/local.dir
+/home/habreu/WORK/microelectronics/build/CMakeFiles/install.dir

@@ -1,0 +1,700 @@
+Available UI session types: [ tcsh, csh ]
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-03 [MT]   (16-September-2022)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+ -----------------------------------------------> WORLD MATERIAL  Material:   Vacuum    density:  0.000 mg/cm3  RadL: 204310098.490 pc   Nucl.Int.Length: 113427284.261 pc 
+                       Imean:  19.200 eV   temperature:   2.73 K  pressure:   0.00 atm
+
+   --->  Element: H (H)   Z =  1.0   N =     1   A =  1.008 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+Physic list : MicroElecPhysics
+G4Material WARNING: duplicate name of material Vacuum
+ -----------------------------------------------> WORLD MATERIAL  Material:   Vacuum    density:  0.000 mg/cm3  RadL: 204310098.490 pc   Nucl.Int.Length: 113427284.261 pc 
+                       Imean:  19.200 eV   temperature:   2.73 K  pressure:   0.00 atm
+
+   --->  Element: H (H)   Z =  1.0   N =     1   A =  1.008 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+Phonon model is constructed 
+Phonon Energy = 0 eV  
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+MicroElecPhysics::SetCuts:CutLength : 1 um 
+=======================================================================
+======                 Electromagnetic Physics Parameters      ========
+=======================================================================
+LPM effect enabled                                 1
+Enable creation and use of sampling tables         0
+Apply cuts on all EM processes                     0
+Use general process                                0
+Enable linear polarisation for gamma               0
+Enable sampling of quantum entanglement            0
+X-section factor for integral approach             0.8
+Min kinetic energy for tables                      100 meV
+Max kinetic energy for tables                      10 TeV
+Number of bins per decade of a table               20
+Verbose level                                      1
+Verbose level for worker thread                    0
+Bremsstrahlung energy threshold above which 
+  primary e+- is added to the list of secondary    100 TeV
+Bremsstrahlung energy threshold above which primary
+  muon/hadron is added to the list of secondary    100 TeV
+Lowest triplet kinetic energy                      1 MeV
+Enable sampling of gamma linear polarisation       0
+5D gamma conversion model type                     0
+5D gamma conversion model on isolated ion          0
+Livermore data directory                           livermore
+=======================================================================
+======                 Ionisation Parameters                   ========
+=======================================================================
+Step function for e+-                              (0.2, 1 mm)
+Step function for muons/hadrons                    (0.2, 0.1 mm)
+Step function for light ions                       (0.2, 0.1 mm)
+Step function for general ions                     (0.2, 0.1 mm)
+Lowest e+e- kinetic energy                         0 eV 
+Lowest muon/hadron kinetic energy                  1 keV
+Fluctuations of dE/dx are enabled                  1
+Use ICRU90 data                                    0
+Use built-in Birks satuaration                     0
+Build CSDA range enabled                           0
+Use cut as a final range enabled                   0
+Enable angular generator interface                 1
+Max kinetic energy for CSDA tables                 1 GeV
+Max kinetic energy for NIEL computation            0 eV 
+Linear loss limit                                  0.01
+Read data from file for e+e- pair production by mu 0
+=======================================================================
+======                 Multiple Scattering Parameters          ========
+=======================================================================
+Type of msc step limit algorithm for e+-           1
+Type of msc step limit algorithm for muons/hadrons 0
+Msc lateral displacement for e+- enabled           1
+Msc lateral displacement for muons and hadrons     0
+Urban msc model lateral displacement alg96         1
+Range factor for msc step limit for e+-            0.04
+Range factor for msc step limit for muons/hadrons  0.2
+Geometry factor for msc step limitation of e+-     2.5
+Safety factor for msc step limit for e+-           0.6
+Skin parameter for msc step limitation of e+-      1
+Lambda limit for msc step limit for e+-            1 mm
+Use Mott correction for e- scattering              0
+Factor used for dynamic computation of angular 
+  limit between single and multiple scattering     1
+Fixed angular limit between single 
+  and multiple scattering                          3.1416 rad
+Upper energy limit for e+- multiple scattering     100 MeV
+Type of electron single scattering model           0
+Type of nuclear form-factor                        1
+Screening factor                                   1
+=======================================================================
+======                 Atomic Deexcitation Parameters          ========
+=======================================================================
+Fluorescence enabled                               1
+Fluorescence Bearden data files enabled            0
+Fluorescence ANSTO data files enabled              0
+Auger electron cascade enabled                     1
+PIXE atomic de-excitation enabled                  0
+De-excitation module ignores cuts                  0
+Type of PIXE cross section for hadrons             Empirical
+Type of PIXE cross section for e+-                 Livermore
+=======================================================================
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 2 regions:
+          DefaultRegionForTheWorld  1  1  1
+          Target  1  1  1
+
+### === G4UAtomicDeexcitation::InitialiseForNewRun()
+### ===  Auger flag: 1
+### ===  Ignore cuts flag:   0
+### ===  PIXE model for hadrons: Empirical
+### ===  PIXE model for e+-:     Livermore
+****************************
+mermin model loaded !
+Material 1 / 2 : Vacuum
+Material 2 / 2 : G4_Cu
+Inelastic/mermin_sigma_inelastic_e-_Cu
+loaddata : Inelastic/mermin_sigma_inelastic_e-_Cu
+Faster code = true
+Inelastic/cumulated_mermin_sigmadiff_inelastic_e-_Cu.dat
+add to material vector
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=   10 TeV Nbins=220 100 eV  -  10 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+      ===== EM models for the G4Region  Target ======
+            UrbanMsc : Emin=  100 MeV Emax=   10 TeV Nbins=100 100 MeV -  10 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e-  XStype:1  SubType=2
+      dE/dx and range tables from 100 meV to 10 TeV in 280 bins
+      Lambda tables from threshold to 10 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=   10 TeV  deltaVI
+      ===== EM models for the G4Region  Target ======
+        MollerBhabha : Emin=   10 MeV Emax=   10 TeV  deltaVI
+
+e-_G4MicroElecElastic:  for e- SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          DummyModel : Emin=    0 eV  Emax=   10 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+      ===== EM models for the G4Region  Target ======
+MicroElecElasticModel : Emin=    0 eV  Emax=  500 keV
+
+e-_G4Dielectrics:  for e- SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          DummyModel : Emin=    0 eV  Emax=   10 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+      ===== EM models for the G4Region  Target ======
+MicroElecInelasticModel : Emin=    0 eV  Emax=   10 MeV  deltaVI Fluo
+
+e-_G4LOPhononScattering:  for e- SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          DummyModel : Emin=    0 eV  Emax=   10 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+      ===== EM models for the G4Region  Target ======
+G4MicroElecLOPhononModel : Emin=    0 eV  Emax=   10 MeV
+G4MicroElecSurface::Initialise: Ncouples= 2
+G4Surface, Material 1 / 2 : Vacuum
+G4Surface, Material 2 / 2 : G4_Cu
+### G4MicroElecCapture: Tracking cut E(MeV) = 9e-07 is assigned to Target
+
+hIoni:  for proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 meV to 10 TeV in 280 bins
+      Lambda tables from threshold to 10 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV  deltaVI
+          BetheBloch : Emin=    2 MeV Emax=   10 TeV  deltaVI
+      ===== EM models for the G4Region  Target ======
+          BetheBloch : Emin=   10 MeV Emax=   10 TeV  deltaVI
+### G4MicroElecCapture: Tracking cut E(MeV) = 0.0001001 is assigned to Target
+
+ionIoni:  for GenericIon  XStype:1  SubType=2
+      dE/dx and range tables from 100 meV to 10 TeV in 280 bins
+      Lambda tables from threshold to 10 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV  deltaVI
+          BetheBloch : Emin=    2 MeV Emax=   10 TeV  deltaVI
+      ===== EM models for the G4Region  Target ======
+          BetheBloch : Emin=   10 MeV Emax=   10 TeV  deltaVI
+
+ionIoni:  for alpha  XStype:1  SubType=2
+      dE/dx and range tables from 100 meV to 10 TeV in 280 bins
+      Lambda tables from threshold to 10 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV  deltaVI
+          BetheBloch : Emin=7.9452 MeV Emax=   10 TeV  deltaVI
+      ===== EM models for the G4Region  Target ======
+          BetheBloch : Emin=   10 MeV Emax=   10 TeV  deltaVI
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperH4 ]1:anti_proton is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperH4 ]1:pi+ is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperH4 ]1:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperH4 ]1:pi0 is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperdoubleneutron ]0:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperdoubleneutron ]0:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_doublehyperdoubleneutron ]1:pi+ is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperH4 ]1:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperH4 ]1:anti_proton is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperH4 ]1:pi+ is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperHe5 ]1:anti_proton is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperHe5 ]1:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperalpha ]1:anti_proton is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperalpha ]1:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hyperalpha ]1:pi0 is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hypertriton ]1:anti_proton is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hypertriton ]1:pi+ is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hypertriton ]1:anti_neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ anti_hypertriton ]1:pi0 is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperH4 ]2:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperH4 ]1:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperH4 ]1:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperH4 ]1:pi0 is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperdoubleneutron ]0:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperdoubleneutron ]0:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ doublehyperdoubleneutron ]1:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperH4 ]1:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperH4 ]2:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperH4 ]1:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperHe5 ]2:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperHe5 ]1:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperalpha ]2:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperalpha ]1:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hyperalpha ]1:pi0 is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hypertriton ]2:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hypertriton ]1:pi- is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hypertriton ]1:neutron is not defined !!
+ The BR of this decay mode is set to zero.
+G4VDecayChannel::FillDaughters() - [ hypertriton ]1:pi0 is not defined !!
+ The BR of this decay mode is set to zero.
+
+=========================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Initializing workers...
+=========================================================================
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateX (OGLIX, OGLI)
+  OpenGLStoredX (OGLSX, OGL, OGLS)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+/run/verbose 2
+/run/initialize
+
+==============================================================================
+--> G4TaskRunManager::ComputeNumberOfTasks() --> 0 tasks with 1 events/task...
+==============================================================================
+
+G4WT0 > /run/verbose 2
+G4WT0 > /run/initialize 
+/tracking/verbose 1
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+Visualization verbosity changed to errors (2)
+#
+# Draw geometry:
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+#
+# Specify view angle:
+#/vis/viewer/set/viewpointThetaPhi -90. 0.
+#
+# Specify zoom value:
+#/vis/viewer/zoom 2.
+#
+# Specify style (surface or wireframe):
+#/vis/viewer/set/style wireframe
+#
+# Draw coordinate axes:
+#/vis/scene/add/axes 0 0 0 1 nm
+/vis/viewer/set/viewpointThetaPhi -90 0
+#
+# Draw smooth trajectories at end of event, showing trajectory points
+# as markers 2 pixels wide:
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+/vis/scene/notifyHandlers
+#/vis/modeling/trajectories/create/drawByCharge
+#/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+#/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+# (if too many tracks cause core dump => /tracking/storeTrajectory 0)
+#
+# Draw hits at end of event:
+#/vis/scene/add/hits
+#
+# To draw only gammas:
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add gamma
+#
+# To invert the above, drawing all particles except gammas,
+# keep the above two lines but also add:
+#/vis/filtering/trajectories/particleFilter-0/invert true
+#
+# Many other options are available with /vis/modeling and /vis/filtering.
+# For example, to select colour by particle ID:
+/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+#
+# To superimpose all of the events from a given run:
+#/vis/scene/endOfEventAction accumulate
+#
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+Visualization verbosity changed to warnings (3)
+#
+# For file-based drivers, use this to create an empty detector view:
+#/vis/viewer/flush
+#/vis/scene/add/scale
+#/vis/viewer/set/projection p
+#/vis/geometry/set/colour Target ! 1 0 0
+#/vis/geometry/set/colour World ! 0.5 0.5 0.9 1
+/tracking/verbose 1
+#/microelectronics/det/setMat G4_Ag
+#/microelectronics/det/setMat G4_Al
+#/microelectronics/det/setMat G4_C
+#/microelectronics/det/setMat G4_Cu
+#/microelectronics/det/setMat G4_Ge
+#/microelectronics/det/setMat G4_KAPTON
+#/microelectronics/det/setMat G4_Ni
+#/microelectronics/det/setMat G4_Si   # default material
+#/microelectronics/det/setMat G4_SILICON_DIOXIDE
+#/microelectronics/det/setMat G4_Ti
+#/microelectronics/det/setMat G4_W
+/gun/particle e-
+#/gun/energy 250 eV
+/gun/energy 500 eV
+#/run/numberOfThreads 2 #if MT is activated
+/run/initialize
+
+==============================================================================
+--> G4TaskRunManager::ComputeNumberOfTasks() --> 0 tasks with 1 events/task...
+==============================================================================
+
+G4WT0 > /tracking/verbose 1
+G4WT0 > /tracking/storeTrajectory 2
+G4WT0 > /tracking/verbose 1
+G4WT0 > /gun/particle e-
+G4WT0 > /gun/energy 500 eV
+G4WT0 > /run/initialize 
+#/run/beamOn 1
+/run/beamOn 1
+
+Region <DefaultRegionForTheWorld> --  -- appears in <World> world volume
+ This region is in the mass world.
+ Root logical volume(s) : World 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : Vacuum 
+ Production cuts :   gamma 1 um      e- 1 um      e+ 1 um  proton 1 um 
+
+Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
+ Root logical volume(s) : 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : 
+ Production cuts :   gamma 1 um      e- 1 um      e+ 1 um  proton 1 um 
+
+Region <Target> --  -- appears in <World> world volume
+ This region is in the mass world.
+ Root logical volume(s) : Target 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_Cu 
+ Production cuts :   gamma 1 nm      e- 1 nm      e+ 1 nm  proton 1 nm 
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : Vacuum
+ Range cuts        :  gamma  1 um     e-  1 um     e+  1 um  proton 1 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 eV 
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_Cu
+ Range cuts        :  gamma  1 nm     e-  1 nm     e+  1 nm  proton 1 nm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 meV
+ Region(s) which use this couple : 
+    Target
+
+==================================================================
+
+### Run 0 starts.
+
+========================================================================================
+--> G4TaskRunManager::CreateAndStartWorkers() --> Creating 1 tasks with 1 events/task...
+========================================================================================
+
+Adding task 0 to task-group...
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT0 > ##### Create analysis manager   0x7f972407ffe0
+G4WT0 > Using  analysis manager
+G4WT0 > ... set ntuple merging row mode : row-wise - done
+G4WT0 > ... create file : microelectronics_t0.root - done
+G4WT0 > ... open analysis file : microelectronics.root - done
+G4WT0 > ... open analysis file : microelectronics.root - done
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0       0 fm       0 fm     -10 um     500 eV           0 eV       0 fm       0 fm      World   initStep
+G4WT0 >     1       0 fm       0 fm       0 fm   504.2 eV    5.32e-17 meV     10 um      10 um      World   Transportation
+G4WT0 > Calling G4MicroElecElasticModel_new::Initialise()
+G4WT0 > MicroElasticModel, Material 1 / 2 : Vacuum
+G4WT0 > MicroElasticModel, Material 2 / 2 : G4_Cu
+G4WT0 > Cu
+G4WT0 > Reading TCS file
+G4WT0 > Elastic Total Cross file : Elastic/elsepa_elastic_cross_e_Cu
+G4WT0 > loaddata : Elastic/elsepa_elastic_cross_e_Cu
+G4WT0 > Elastic Cumulated Diff Cross : /home/habreu/WORK/geant4-v11.0.3-install/share/Geant4-11.0.3/data/G4EMLOW8.0/microelec/Elastic/elsepa_elastic_cumulated_diffcross_e_Cu.dat
+G4WT0 >     2       0 fm       0 fm   5.694 Ang  504.2 eV           0 eV   5.694 Ang     10 um     Target   e-_G4MicroElecElastic
+G4WT0 >     3 -5.332e+04 fm    5939 fm   4.802 Ang  485.1 eV     1.8e-09 meV  1.041 Ang     10 um     Target   e-_G4Dielectrics
+G4WT0 >     4  -1.262 Ang-1.251e+04 fm   3.213 Ang  485.1 eV           0 eV   1.758 Ang     10 um     Target   e-_G4MicroElecElastic
+G4WT0 >     5   -2.39 Ang-4.548e+04 fm 8.627e+04 fm   485.1 eV           0 eV   2.627 Ang     10 um     Target   e-_G4MicroElecElastic
+G4WT0 >     6  -2.568 Ang-3.739e+04 fm 2.551e+04 fm   485.1 eV           0 eV 6.383e+04 fm      10 um     Target   e-_G4MicroElecElastic
+G4WT0 >     7  -2.543 Ang-3.533e+04 fm 1.84e-09 fm   480.9 eV           0 eV 2.572e+04 fm      10 um     Target   Transportation
+G4WT0 >     8    19.6 nm   15.97 nm    -200 nm   480.9 eV   1.102e-18 meV  201.6 nm    10.2 um      World   OutOfWorld
+G4WT0 >  @ Track ID    : 1, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0.000480941, @ Volume      : World
+G4WT0 > , @ Momentum Dir      : -0.991969
+G4WT0 > , @ Vertex Pos  : 1.95951e-05;1.59732e-05;-0.0002
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0 -5.332e+04 fm    5939 fm   4.802 Ang  19.06 eV           0 eV       0 fm       0 fm     Target   initStep
+G4WT0 >     1  -1.926 Ang  2.324 Ang  5.401 Ang  19.06 eV           0 eV   2.725 Ang  2.725 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     2  -2.941 Ang  3.993 Ang  5.791 Ang  19.06 eV           0 eV   1.992 Ang  4.717 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     3  -3.153 Ang  4.708 Ang  6.183 Ang  19.06 eV           0 eV 8.428e+04 fm    5.56 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     4  -2.731 Ang  8.791 Ang  9.695 Ang  19.06 eV           0 eV   5.402 Ang  1.096 nm     Target   e-_G4MicroElecElastic
+G4WT0 >     5  -2.685 Ang  2.881 Ang  6.908 Ang  9.581 eV     1.8e-09 meV  6.535 Ang   1.75 nm     Target   e-_G4Dielectrics
+G4WT0 >     6  -2.569 Ang  2.702 Ang  6.906 Ang  3.492 eV     1.8e-09 meV2.13e+04 fm   1.771 nm     Target   e-_G4Dielectrics
+G4WT0 >     7  -2.569 Ang  2.702 Ang  6.906 Ang      0 eV       3.492 eV 3.81e-297 fm   1.771 nm     Target   e-_G4MicroElecElastic
+G4WT0 >  @ Track ID    : 2, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0, @ Volume      : Target
+G4WT0 > , @ Momentum Dir      : 0.199298
+G4WT0 > , @ Vertex Pos  : -2.5694e-07;2.70171e-07;6.90627e-07
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0  -2.569 Ang  2.702 Ang  6.906 Ang  6.089 eV           0 eV       0 fm       0 fm     Target   initStep
+G4WT0 >     1  -2.566 Ang  2.688 Ang  6.905 Ang  6.089 eV           0 eV    1389 fm    1389 fm     Target   e-_G4MicroElecElastic
+G4WT0 >     2   -2.23 Ang  2.016 Ang  7.031 Ang  6.089 eV           0 eV 7.626e+04 fm 7.765e+04 fm     Target   e-_G4MicroElecElastic
+G4WT0 >     3  -2.242 Ang  1.947 Ang  6.975 Ang  6.089 eV           0 eV    8894 fm 8.655e+04 fm     Target   e-_G4MicroElecElastic
+G4WT0 >     4  -2.242 Ang  1.945 Ang  6.975 Ang  6.089 eV           0 eV   245.8 fm 8.679e+04 fm     Target   e-_G4MicroElecElastic
+G4WT0 >     5  -2.267 Ang  1.776 Ang  6.966 Ang  6.089 eV           0 eV 1.704e+04 fm   1.038 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     6  -1.773 Ang1.169e+04 fm   6.464 Ang  6.089 eV           0 eV   1.803 Ang  2.841 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     7  -1.467 Ang-4.75e+04 fm   6.616 Ang  6.089 eV           0 eV 6.836e+04 fm   3.525 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     8  -1.805 Ang-8.092e+04 fm   6.503 Ang  6.089 eV           0 eV 4.891e+04 fm   4.014 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     9  -2.346 Ang -1.419 Ang  6.465 Ang  6.089 eV           0 eV 8.163e+04 fm    4.83 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    10  -2.347 Ang  -1.42 Ang  6.465 Ang  6.089 eV           0 eV   143.1 fm   4.832 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    11  -2.282 Ang -1.459 Ang  6.255 Ang  6.089 eV           0 eV 2.23e+04 fm   5.055 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    12  -2.275 Ang -1.455 Ang  6.248 Ang  6.089 eV           0 eV    1076 fm   5.065 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    13  -2.199 Ang -1.315 Ang  6.019 Ang  6.089 eV           0 eV 2.792e+04 fm   5.344 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    14  -2.185 Ang -1.131 Ang  5.884 Ang  6.089 eV           0 eV 2.284e+04 fm   5.573 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    15  -1.963 Ang -1.001 Ang   5.96 Ang  6.089 eV           0 eV 2.678e+04 fm   5.841 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    16  -1.764 Ang-5.784e+04 fm   6.199 Ang  6.089 eV           0 eV 5.246e+04 fm   6.365 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    17 -4.876e+04 fm 5.179e+04 fm   7.604 Ang  6.089 eV           0 eV   2.192 Ang  8.557 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >    18 5.535e+04 fm   1.507 Ang  8.755 Ang  6.089 eV           0 eV   1.841 Ang   1.04 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    19  -357.3 fm   1.133 Ang  8.711 Ang  6.089 eV           0 eV 6.725e+04 fm   1.107 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    20 6.451e+04 fm   1.977 Ang  9.503 Ang  6.089 eV           0 eV   1.326 Ang   1.24 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    21 8.184e+04 fm   1.989 Ang  9.471 Ang  6.089 eV           0 eV 1.765e+04 fm   1.257 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    22 9.099e+04 fm   1.987 Ang  9.504 Ang  6.089 eV           0 eV    9706 fm   1.267 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    23   1.237 Ang  1.746 Ang  9.654 Ang  6.089 eV           0 eV 4.333e+04 fm    1.31 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    24   3.511 Ang-2.201e+04 fm   1.027 nm   6.089 eV           0 eV   3.068 Ang  1.617 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    25   3.787 Ang-3.562e+04 fm   1.046 nm   6.089 eV           0 eV 3.61e+04 fm   1.653 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    26   3.965 Ang-7.601e+04 fm       1 nm   6.089 eV           0 eV 6.355e+04 fm   1.717 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    27   3.956 Ang-8.136e+04 fm   9.956 Ang  6.089 eV           0 eV    7114 fm   1.724 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    28   3.667 Ang -1.193 Ang  9.759 Ang  6.089 eV           0 eV 5.155e+04 fm   1.775 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    29   4.126 Ang -1.429 Ang  9.306 Ang  6.089 eV           0 eV 6.865e+04 fm   1.844 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    30   4.705 Ang -1.843 Ang  8.804 Ang  6.089 eV           0 eV 8.712e+04 fm   1.931 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    31   5.516 Ang -1.084 Ang   8.66 Ang  6.089 eV           0 eV   1.121 Ang  2.043 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    32   5.897 Ang-6.085e+04 fm   8.627 Ang  6.089 eV           0 eV 6.098e+04 fm   2.104 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    33   5.889 Ang-6.518e+04 fm    8.65 Ang  6.089 eV           0 eV    5009 fm   2.109 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    34   5.542 Ang -1.009 Ang  8.591 Ang  6.089 eV           0 eV 5.016e+04 fm   2.159 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    35   4.887 Ang  -1.78 Ang  8.833 Ang  6.089 eV           0 eV    1.04 Ang  2.263 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    36   4.673 Ang -2.191 Ang  8.993 Ang  6.089 eV           0 eV 4.906e+04 fm   2.312 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    37   4.697 Ang -1.895 Ang  8.962 Ang  6.089 eV           0 eV 2.982e+04 fm   2.342 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    38   4.809 Ang -1.598 Ang  8.867 Ang  6.089 eV           0 eV 3.314e+04 fm   2.375 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    39   5.595 Ang-8.648e+04 fm   8.473 Ang  6.089 eV           0 eV   1.145 Ang   2.49 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    40   5.736 Ang-1.946e+04 fm   7.881 Ang  6.089 eV           0 eV 9.052e+04 fm    2.58 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    41   6.602 Ang-9.96e+04 fm    7.49 Ang  6.089 eV           0 eV   1.243 Ang  2.705 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    42   6.828 Ang -1.101 Ang  7.321 Ang  6.089 eV           0 eV 3.01e+04 fm   2.735 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    43   6.298 Ang -1.745 Ang  8.499 Ang  6.089 eV           0 eV   1.443 Ang  2.879 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    44   6.288 Ang -1.766 Ang  8.488 Ang  6.089 eV           0 eV    2516 fm   2.882 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    45   6.101 Ang -2.142 Ang  8.872 Ang  6.089 eV           0 eV 5.688e+04 fm   2.939 nm     Target   e-_G4MicroElecElastic
+G4WT0 >    46   5.959 Ang -2.355 Ang  9.065 Ang  2.006 eV     1.8e-09 meV3.213e+04 fm   2.971 nm     Target   e-_G4Dielectrics
+G4WT0 >    47   5.959 Ang -2.355 Ang  9.065 Ang      0 eV       2.006 eV 1.807e-296 fm   2.971 nm     Target   e-_G4MicroElecElastic
+G4WT0 >  @ Track ID    : 4, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0, @ Volume      : Target
+G4WT0 > , @ Momentum Dir      : 0.965479
+G4WT0 > , @ Vertex Pos  : 5.95857e-07;-2.35525e-07;9.06495e-07
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 4
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0   5.959 Ang -2.355 Ang  9.065 Ang  4.083 eV           0 eV       0 fm       0 fm     Target   initStep
+G4WT0 >     1   5.959 Ang -2.355 Ang  9.065 Ang      0 eV       4.083 eV 1.148e-296 fm 1.148e-296 fm     Target   e-_G4MicroElecElastic
+G4WT0 >  @ Track ID    : 5, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0, @ Volume      : Target
+G4WT0 > , @ Momentum Dir      : 0.435025
+G4WT0 > , @ Vertex Pos  : 5.95857e-07;-2.35525e-07;9.06495e-07
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0  -2.685 Ang  2.881 Ang  6.908 Ang  9.479 eV           0 eV       0 fm       0 fm     Target   initStep
+G4WT0 >     1  -3.977 Ang2.476e+04 fm    4.71 Ang  9.479 eV           0 eV   3.666 Ang  3.666 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     2  -3.996 Ang2.375e+04 fm   4.702 Ang  7.646 eV     1.8e-09 meV   2232 fm   3.688 Ang    Target   e-_G4Dielectrics
+G4WT0 >     3  -5.891 Ang-8.475e+04 fm    4.47 Ang  7.646 eV           0 eV   2.196 Ang  5.885 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     4  -7.274 Ang -1.142 Ang  3.867 Ang  7.646 eV           0 eV   1.537 Ang  7.421 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     5  -7.439 Ang   -1.1 Ang  3.831 Ang  7.646 eV           0 eV 1.739e+04 fm   7.595 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >     6  -7.428 Ang -1.138 Ang  3.838 Ang  3.637 eV     1.8e-09 meV   3990 fm   7.635 Ang    Target   e-_G4Dielectrics
+G4WT0 >     7  -7.428 Ang -1.138 Ang  3.838 Ang      0 eV       3.637 eV 8.995e-297 fm   7.635 Ang    Target   e-_G4MicroElecElastic
+G4WT0 >  @ Track ID    : 3, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0, @ Volume      : Target
+G4WT0 > , @ Momentum Dir      : -0.0407523
+G4WT0 > , @ Vertex Pos  : -7.42752e-07;-1.13809e-07;3.83757e-07
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 3
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0  -7.428 Ang -1.138 Ang  3.838 Ang  4.009 eV           0 eV       0 fm       0 fm     Target   initStep
+G4WT0 >     1  -7.428 Ang -1.138 Ang  3.838 Ang      0 eV       4.009 eV 7.153e-297 fm 7.153e-297 fm     Target   e-_G4MicroElecElastic
+G4WT0 >  @ Track ID    : 7, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0, @ Volume      : Target
+G4WT0 > , @ Momentum Dir      : 0.249776
+G4WT0 > , @ Vertex Pos  : -7.42752e-07;-1.13809e-07;3.83757e-07
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 3
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#       X          Y          Z         KineE         dEStep    StepLeng   TrakLeng    Volume     Process
+G4WT0 >     0  -3.996 Ang2.375e+04 fm   4.702 Ang  1.833 eV           0 eV       0 fm       0 fm     Target   initStep
+G4WT0 >     1  -3.996 Ang2.375e+04 fm   4.702 Ang      0 eV       1.833 eV 1.21e-297 fm 1.21e-297 fm     Target   e-_G4MicroElecElastic
+G4WT0 >  @ Track ID    : 6, @ Track Def   : e-, @ Charge PDG  : -1, @ Energy      : 0, @ Volume      : Target
+G4WT0 > , @ Momentum Dir      : -0.625644
+G4WT0 > , @ Vertex Pos  : -3.99566e-07;2.3751e-08;4.70195e-07
+G4WT0 > [thread 0] Thread-local run terminated.
+G4WT0 > [thread 0] Run Summary
+G4WT0 > [thread 0]   Number of events processed : 1
+G4WT0 > [thread 0]   User=0.070000s Real=0.074721s Sys=0.010000s [Cpu=107.1%]
+G4WT0 > ... write file : microelectronics_t0.root - done
+G4WT0 > ... close file : microelectronics_t0.root - done
+G4WT0 > ... clear all data - done
+G4WT0 > _______________________
+G4WT0 > Number and type of particles created in region "WORLD (Primary)" :
+G4WT0 > N e- : 1
+G4WT0 > _______________________
+G4WT0 > Number and type of particles created in region "Target" :
+G4WT0 > N e- : 6
+G4WT0 > _______________________
+G4WT0 > Number and type of particles created outside  region "Target" :
+G4WT0 > N e- : 1
+G4WT0 > _______________________
+ Run terminated.
+Run Summary
+  Number of events processed : 1
+  User=0.090000s Real=0.103511s Sys=0.010000s [Cpu=96.6%]
+1 event has been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Idle> '
+/'
+Idle> '
+/'
+Idle> '
+/'
+Idle> 
+Idle> 
+Idle> 
+Idle> 
+Session terminated.
